@@ -1,0 +1,22 @@
+ion-modal.contacts-modal {
+    display: flex !important;
+    left: auto !important;
+    top: auto !important;
+    justify-content: center;
+    align-items: center;
+
+    ion-backdrop {
+        visibility: visible;
+    }
+
+    .modal-wrapper {
+        height: 30%;
+        width: 80%;
+    }
+}
+
+page-contacts-modal {
+    ion-content {
+        border-radius: 4px;
+    }
+}

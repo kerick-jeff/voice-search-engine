@@ -1,14 +1,72 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <ion-card (click)="speak('web')" class="item">
+          <img class="item__img" src="assets/imgs/web.svg">
+          <div class="item__desc">Web</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card (click)="speak('contacts')" class="item">
+          <img class="item__img" src="assets/imgs/contacts.svg">
+          <div class="item__desc">Contacts</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card (click)="speak('google')" class="item">
+          <img class="item__img" src="assets/imgs/google.svg">
+          <div class="item__desc">Google</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-row>
+      <ion-col col-4>
+        <ion-card (click)="speak('youtube')" class="item">
+          <img class="item__img" src="assets/imgs/youtube.svg">
+          <div class="item__desc">Youtube</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card (click)="speak('wikipedia')" class="item">
+          <img class="item__img" src="assets/imgs/wikipedia.svg">
+          <div class="item__desc">Wikipedia</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card (click)="speak('quora')" class="item">
+          <img class="item__img" src="assets/imgs/quora.svg">
+          <div class="item__desc">Quora</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>
+        <ion-card (click)="speak('facebook')" class="item">
+          <img class="item__img" src="assets/imgs/facebook.svg">
+          <div class="item__desc">Facebook</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card (click)="speak('twitter')" class="item">
+          <img class="item__img" src="assets/imgs/twitter.svg">
+          <div class="item__desc">Twitter</div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card (click)="speak('amazon')" class="item">
+          <img class="item__img" src="assets/imgs/amazon.svg">
+          <div class="item__desc">Amazon</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="margin-top: 7.5vh">
+    <button (click)="speak('web')" ion-button round large icon-only style="display: block; margin: 0 auto">
+      <ion-icon name="ios-mic"></ion-icon>
+    </button>
+  </div>
 </ion-content>

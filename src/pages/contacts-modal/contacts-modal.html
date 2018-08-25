@@ -1,0 +1,14 @@
+<ion-content padding>
+  <ion-list *ngIf="contactList">
+    <ion-item *ngFor="let contact of contactList">
+      <ion-avatar item-start>
+        <img *ngIf="contact.photos; else noPhoto" src="contact.photos[0]" style="width: 32px; height: 32px;">
+        <ng-template #noPhoto>
+          <img src="assets/imgs/user.svg" style="width: 32px; height: 32px;">
+        </ng-template>
+      </ion-avatar>
+      <h2>{{ contact.displayName }}</h2>
+      <p>{{ contact.phoneNumbers[0] }}</p>
+    </ion-item>
+  </ion-list>  
+</ion-content>

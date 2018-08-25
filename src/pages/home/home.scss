@@ -1,3 +1,21 @@
 page-home {
+    .item {
+        width: calc(100% - 10px);
+        padding: 5px;
+    }
 
+    .item .item__img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .item .item__desc {
+        text-align: center;
+        font-size: 1em;
+        color: #555;
+        margin-top: 1vh;
+        font-weight: 700;
+    }
 }
